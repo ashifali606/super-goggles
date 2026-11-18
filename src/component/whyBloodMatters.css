@@ -1,0 +1,198 @@
+.body-of-component {
+      background-color: #0b0f19 !important;
+      padding-top: 40px;
+      padding-bottom: 80px;
+}
+
+.heading-title {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: clamp(18px, 5vw, 42px);
+      width: 100%;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+      white-space: nowrap;
+}
+
+.highlight-red {
+      color: #ef4444;
+}
+
+.whyBloodMattersContent {
+
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #94a3b8;
+      line-height: 1.65;
+      letter-spacing: 0.01em;
+      margin-bottom: 20px;
+      max-width: 650px;
+}
+
+.WhyBloodMatters-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+      width: 100%;
+
+}
+
+.WhyBloodMatters-features-card {
+      background-color: #131826;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      animation: floatCard 3s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+
+      0%,
+      100% {
+            transform: translateY(0px);
+            border-color: #1e293b;
+            box-shadow: none;
+      }
+
+      50% {
+            transform: translateY(-4px);
+            border-color: rgba(239, 68, 68, 0.4);
+            box-shadow: 0 8px 24px rgba(239, 68, 68, 0.15);
+      }
+}
+
+.WhyBloodMatters-features-card:nth-child(1) {
+      animation-delay: 0s;
+}
+
+.WhyBloodMatters-features-card:nth-child(2) {
+      animation-delay: 0.5s;
+}
+
+.WhyBloodMatters-features-card:nth-child(3) {
+      animation-delay: 1s;
+}
+
+.WhyBloodMatters-features-card:nth-child(4) {
+      animation-delay: 1.5s;
+}
+
+.WhyBloodMatters-icon-box {
+      background-color: rgba(239, 68, 68, 0.12);
+      color: #ef4444;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+}
+
+.card-text {
+      color: #f1f5f9;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+      .heading-title {
+            font-size: 24px;
+            white-space: normal;
+      }
+
+      .WhyBloodMatters-cards-grid {
+            grid-template-columns: 1fr;
+            gap: 12px;
+      }
+
+      .WhyBloodMatters-features-card {
+            padding: 14px 16px;
+      }
+}
+
+.compatibility-card {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(145deg, #1b1523 0%, #111522 100%);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.compatibility-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+}
+
+.header-icon {
+      color: #ef4444 !important;
+      animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+      0%,100% {
+            transform: scale(1);
+      }
+
+      25% {
+            transform: scale(1.25);
+      }
+
+      50% {
+            transform: scale(1);
+      }
+
+      75% {
+            transform: scale(1.15);
+
+      }
+}
+.compatibility-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+.compatibility-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.compatibility-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.blood-type {
+  color: #f87171;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+.recipient-text {
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+@media (max-width: 991px) {
+  .compatibility-card {
+    margin-top: 32px;
+    padding: 24px;
+  }
+}

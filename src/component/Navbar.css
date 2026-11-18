@@ -1,0 +1,106 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+.custom-navbar {
+    background-color: rgba(13, 17, 28, 0.45) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+body {
+    background-color: #05070f !important;
+}
+
+@media (max-width:991.98px) {
+    .custom-navbar .navbar-collapse .hide {
+        display: none !important;
+        width: 100%;
+
+    }
+
+    .custom-navbar .navbar-collapse .show {
+        display: block !important;
+        padding-top: 15px;
+        padding-bottom: 10px;
+
+    }
+    .custom-navbar .navbar-nav{
+        align-items: flex-start !important;
+        width: 100%;
+        gap: 15px;
+    }
+    .custom-navbar .nav-item{
+        text-align: left !important;
+        width: 100%;
+
+    }
+    .custom-navbar .navbar-nav .btn-danger{
+          display: block;
+          text-align: center;
+          width: 100%;
+        }
+    .custom-navbar .nav-item{
+        width: 100%;
+    }
+      .custom-navbar .nav-link.active{
+         color: #ff4d4d !important; 
+        background-color: rgba(220, 53, 69, 0.15) !important; 
+          width: 100%;
+         display: block;
+         padding-left: 10px;
+      }
+       .custom-navbar .nav-link.active::after {
+        display: none !important;
+    }
+}
+.login-btn-custom{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   
+}
+.login-btn-custom::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:-100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition:left  0.5s ease-in-out;
+    z-index: -1;
+}
+.login-btn-custom:hover::before{
+    left: 100%;
+}
+.custom-navbar .nav-link{
+ position: relative;
+color: #ffffff !important;
+padding-bottom:8px;
+border-radius: 8px;
+}
+.custom-navbar .nav-link.active{
+     color: #dc3545 !important; 
+     font-weight: 500;
+} 
+.custom-navbar .nav-link.active::after{
+    content: '';
+    position: absolute;
+    background-color:  #dc3545;
+    border-radius: 50%;
+    width: 5px;
+   height: 5px;
+   bottom: 0;
+   left: 50%;
+ transform: translateX(-50%);
+ border-radius: 50%;
+}
+
+
+
