@@ -37,8 +37,8 @@ function WhatPeopleSay() {
         },
         {
             say: 'As a hospital administrator, BloodLink has streamlined our blood procurement process significantly. Highly recommended',
-            name: 'Tm6s',
-            city: "United States"
+            name: 'Dr.Fathima Ilza K.P',
+            city: "Saudi Arabia"
         }
     ];
 
