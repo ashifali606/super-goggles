@@ -45,7 +45,7 @@ function Footer() {
               </li>
               <li>
                 <LuPhone className="contact-icon" />
-                <span>+918075379301</span>
+                <span>+919745794181</span>
               </li>
               <li>
                 <LuMail className="contact-icon" />
