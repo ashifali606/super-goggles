@@ -74,7 +74,7 @@ function ContactCards() {
                                     </div>
                                     <h2>Head Office</h2>
                                     <h6>Kerala, Calicut</h6>
-                                    <p>Near Kmct Medical College</p>
+                                    <p>Near KMCT Medical College</p>
                                 </div>
                                 {/* Back Side */}
 
